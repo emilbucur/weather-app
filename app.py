@@ -9,7 +9,7 @@ app = Flask(__name__)
 def Hello():
     return "hello, world!"
 
-@app.route("/weather/")
+@app.route("/weather-cluj/")
 def vreme():
     temp = weather()
     temp = json.dumps(temp)
